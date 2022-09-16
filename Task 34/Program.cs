@@ -3,15 +3,9 @@
 // [345, 897, 568, 234] -> 2
 
  
-Console.WriteLine("Введите размер массива: ");
-int n = Convert.ToInt32(Console.ReadLine());
-
 // Функция определения массива 
-int [] GetArray()
-    {
-        // Console.WriteLine("Введите размер массива: ");
-        // int n = Convert.ToInt32(Console.ReadLine());
-
+int [] GetArray(int n)
+    {        
         int[] array = new int [n];
         for (int i = 0; i < array.Length; i++)
             {
@@ -38,6 +32,10 @@ void PrintGetEvenNumbers(int [] array)
     }
 
 
+//Определяем массив
+Console.WriteLine("Введите размер массива: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
 // Вызов функций
-int [] array = GetArray();
+int [] array = GetArray(n);
 PrintGetEvenNumbers(array);
