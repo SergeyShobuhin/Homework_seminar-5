@@ -41,7 +41,7 @@ int maxValue = Convert.ToInt32(Console.ReadLine());
 
 //Вызов функций
 int [] array = GetArray(n, minValue, maxValue);
-int sumen = PrintGetSumNoteven(array);
+PrintGetSumNoteven(array);
 
 //Результат
 Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях в интервале от {minValue} до {maxValue} равно {sum}.");
