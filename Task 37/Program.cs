@@ -26,7 +26,7 @@ int [] GetArray(int n, int minValue, int maxValue)
 int [] GetMultPairs(int [] array)
     {
         
-        if (array.Length % 2 == 0)
+        if (array.Length % 2 == 0) // если количество элементов массива чётное
         {
             tempArray = array.Length / 2;
             rezult = new int[tempArray];
@@ -36,9 +36,9 @@ int [] GetMultPairs(int [] array)
                 rezult[i] = array[i] * array[array.Length - i - 1];
             }
         }
-        else
+        else  //  если количество элементов массива НЕ чётное
         {
-            tempArray = (array.Length / 2) + 1;
+            tempArray = (array.Length / 2) + 1; 
             rezult = new int[tempArray];
 
             for (int i = 0; i < tempArray; i++)
